@@ -20,6 +20,7 @@ public class TestProduto {
 		
 		Assert.assertEquals("Arroz",arroz.getNome());
 		Assert.assertEquals(6.99, arroz.getValor_previsto(), 0.001);
+		Assert.assertEquals((double)0.0, arroz.getValor_real(), 0.001);
 	}
 	
 	@Test
@@ -40,6 +41,7 @@ public class TestProduto {
 		
 		Assert.assertEquals(7.40, arroz.getValor_previsto(), 0.001);
 		Assert.assertEquals(lista_teste, arroz.precos_anteriores());
+		Assert.assertEquals((double)0.0, arroz.getValor_real(), 0.001);
 	}
 
 }

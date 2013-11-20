@@ -31,6 +31,7 @@ public class Produto {
 	public void atualiza() {
 		this.precos_anteriores.add(this.valor_previsto);
 		this.valor_previsto = this.valor_real;
+		this.valor_real = (double)0.0;
 		
 	}
 	public ArrayList<Double> precos_anteriores() {
